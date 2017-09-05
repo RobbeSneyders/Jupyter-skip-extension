@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 24 00:07:39 2017
-
 @author: Robbe Sneyders
 """
 
@@ -10,7 +9,7 @@ def skip(line, cell=None):
     if eval(line):
         return
         
-    exec(cell)
+    get_ipython().ex(cell)
     
 def load_ipython_extension(shell):
     '''Registers the skip magic when the extension loads.'''
