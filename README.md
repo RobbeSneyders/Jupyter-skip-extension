@@ -18,11 +18,15 @@ You can use a variable to decide if a cell should be skipped by using $:
 
 ```Jupyter Notebook
 should_skip = True
+
 %%skip $should_skip 
 #skipped
 
+
 should_skip = False
+
 %%skip $should_skip 
 #not skipped
 ```
     
+skip_kernel_extension_2.py is an alternative implementation with the same functionality.
